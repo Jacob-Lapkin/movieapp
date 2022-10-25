@@ -6,7 +6,7 @@
 @keyframes neon {
   0% {color: rgb(159, 52, 159); text-shadow: 0px 0px 5px rgb(159, 52, 159);}
   25% {color: pink; text-shadow: 0px 0px 5px pink;}
-  75% {color: rgb(196, 126, 197); text-shadow: 0px 0px 5px rgb(196, 126, 197orange;}
+  75% {color: rgb(196, 126, 197); text-shadow: 0px 0px 5px rgb(196, 126, 197)}
   100% {color: rgb(193, 119, 131); text-shadow: 0px 0px 5px rgb(193, 119, 131);}
 
 }
@@ -50,8 +50,8 @@
 }
 
 .search-input:focus {
-  box-shadow: 0px 0px 5px gold;
-  border: 2px solid gold !important;
+  box-shadow: 0px 0px 5px rgb(159, 52, 159);
+  border: 2px solid rgb(159, 52, 159) !important;
   outline: none;
 }
 
@@ -63,15 +63,9 @@
 }
 
 .search-button:hover {
-  color: rgb(144, 128, 38);
+  color: rgb(159, 52, 159);
 }
 
-@keyframes box-neon {
-  0% {box-shadow: 1px 3px 7px white;}
-  25% {box-shadow: 1px 3px 7px pink;}
-  75% { box-shadow: 1px 3px 7px orange;}
-  100% { box-shadow: 1px 3px 7px rgb(77, 255, 0);}
-}
 
 .card-body {
   height: 540px;
@@ -79,11 +73,11 @@
   position: relative;
   margin: auto;
   box-shadow: 1px 3px 10px rgb(33, 33, 33);
-  animation-name:box-neon;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   border-radius: 15px 15px 15px 15px;
+}
+
+.card-body:hover {
+  box-shadow: 0px 0px 7px rgb(159, 52, 159);
 }
 
 .card-body:hover .movie-style {
@@ -125,7 +119,7 @@
 
 .card-type {
   font-size: 20px;
-  color: rgb(159, 145, 69);
+  color: rgb(143, 35, 143);
   font-weight: bold;
 }
 
