@@ -1,0 +1,142 @@
+
+.wrapper {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes neon {
+  0% {color: white; text-shadow: 0px 0px 5px white;}
+  25% {color: pink; text-shadow: 0px 0px 5px pink;}
+  75% {color: orange; text-shadow: 0px 0px 5px orange;}
+  100% {color: rgb(77, 255, 0); text-shadow: 0px 0px 5px rgb(77, 255, 0);}
+
+}
+
+.title {
+  text-align: center;
+  animation-name: neon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.title-div {
+  width:100%;
+  margin-top: 50px;
+}
+
+.search-div {
+  position: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+.search-input {
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border: solid 2px transparent;
+  font-size: 16px;
+  color: #757575;
+  font-weight: bold;
+  background-color: rgb(43, 42, 42);
+  transition: border .5s;
+}
+
+.search-input:focus {
+  box-shadow: 0px 0px 5px gold;
+  border: 2px solid gold !important;
+  outline: none;
+}
+
+.search-button {
+  color: black;
+  transition: color .3s;
+  background-color: transparent;
+  border: none;
+}
+
+.search-button:hover {
+  color: rgb(144, 128, 38);
+}
+
+@keyframes box-neon {
+  0% {box-shadow: 1px 3px 7px white;}
+  25% {box-shadow: 1px 3px 7px pink;}
+  75% { box-shadow: 1px 3px 7px orange;}
+  100% { box-shadow: 1px 3px 7px rgb(77, 255, 0);}
+}
+
+.card-body {
+  height: 540px;
+  width: 350px;
+  position: relative;
+  margin: auto;
+  box-shadow: 1px 3px 10px rgb(33, 33, 33);
+  animation-name:box-neon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.card-body:hover .movie-style {
+  opacity: 100%;
+}
+
+.card-body:hover .card-footer {
+  background-color: black;
+}
+
+.card-body:hover .card-title {
+  color: #757575;
+}
+
+.movie-style {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 380px;
+  border-radius: 15px 15px 0px 0px;
+  opacity: 50%;
+}
+
+
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 350px;
+  height: 160px;
+  background-color: transparent;
+  border-radius: 0px 0px 15px 15px !important;
+  padding: 10px;
+}
+
+
+
+.card-type {
+  font-size: 20px;
+  color: rgb(159, 145, 69);
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 22px;
+  color: black;
+  position: absolute;
+}
+ 
+
+  .ult-container {
+    max-width: 1200px;
+    margin:auto;
+  }
